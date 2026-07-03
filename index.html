@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <link rel="stylesheet" href="reset.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon-black.svg" type="image/svg+xml" />
@@ -15,20 +16,22 @@
       </button>
     </header>
 
-    <main>
-        <section id="#">
-            <h1><span class="text_blue">Fique de olho</span><br>no que importa</h1>
-            <p>
-                Monitoramento em tempo real com alertas inteligentes para sua<br>aplicação
+    <main class=".center">
+        <section id="#" class=".center">
+            <h1 class="h1_content"><span class="text_blue">Fique de olho</span><br>no que importa</h1>
+            <p class="p_content">
+                Monitoramento em tempo real com alertas inteligentes para sua aplicação
                 nunca sair do ar sem você saber.
             </p>
-            <a href="">Testar versão demo</a>
-            <img src="/src/img/img-cell-descktop.png" alt="Dois celulares pretos sobrepostos com uma sombra roxa sobre eles" />
+            <a class="a_content" href="">Testar versão demo</a>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/src/img/img-descktop.png">
+              <source media="(min-width: 475px)" srcset="/src/img/img-tablet.png">
+              <img src="/src/img/img-cell.png" alt="Dois celulares pretos sobrepostos com uma sombra roxa sobre eles" />
+            </picture>
             
         </section>
     </main>
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

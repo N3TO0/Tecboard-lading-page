@@ -1,0 +1,59 @@
+/* /* ==========================================================================
+   RESET CSS MODERNO
+   ========================================================================== */
+
+/* 1. Garante que o padding e a borda fiquem DENTRO do tamanho total do elemento */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Remove o comportamento de scroll elástico e garante altura total */
+html {
+  height: fit-content;
+  width: fit-content;
+
+}
+
+/* 3. Melhora a renderização das fontes e define uma base limpa para o body */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. Evita que imagens e mídias fiquem maiores que seus containers (essencial para responsividade) */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. Herda as fontes do body para elementos de formulário que costumam ignorá-la */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Evita que textos longos quebrem o layout em títulos e parágrafos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Remove os pontinhos/números padrões de listas */
+ol, ul {
+  list-style: none;
+}
+
+/* 8. Remove os sublinhados padrões e cores azuis de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 9. Remove bordas padrões de botões e adiciona o cursor de clique */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+} 
