@@ -1,5 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+:root{
+  /* Estilização geral */
+  --background_color:#0e1014;
+  --font_text:"Poppins", sans-serif;
+  --text_color:#ffffff;
+  --h1_emphasis_color:#9747ff;
+  --h1_empshasis_shadow: 5px 5px 200px  #9747ff;
+  --background_color_buttom:#9747ff;
+  --background_color_buttom_hover:#823be0;
+  
+  /* Estilação Desktop */
+  --h1_size:3.5vw;
+  --h1_widht:100%;
+  --h1_weight:700;
+  --p_size:1.1vw;
+  --p_widht:60%;
+  --p_weight:300;
+  --width_buttom:17vw;
+  --height_buttom:3.3vw;
+  --text_buttom_size:1.2vw;
+  --text_weight_buttom:500;
+
+  /* Estilação tablet */
+  --h1_size_tablet:10vw;
+  --h1_widht_tablet:85%;
+  --p_size_tablet:3.3vw;
+  --p_widht_tablet:90%;
+  --width_buttom_tablet:50vw;
+  --height_buttom_tablet:10vw;
+  --text_buttom_size_tablet:3.5vw;
+
+  /* Estilação celular */
+  --h1_size_celular:11vw;
+  --h1_widht_celular:85%;
+  --p_size_celular:5vw;
+  --p_widht_celular:85%;
+  --width_buttom_celular:65vw;
+  --height_buttom_celular:15vw;
+  --text_buttom_size_celular:5vw;
+  
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +51,13 @@
 body {
   width: 99vw;
   height: 100vh;
-  background-color: #0e1014;
-  color: white;
+  background-color: var(--background_color);
+  color: var(--text_color);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  font-family: var(--font_text);
 }
 section {
   width: 100%;
@@ -35,10 +78,9 @@ section {
   }
 }
 .p_content {
-    width: 60%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 1.1vw;
+    width: var(--p_widht);
+    font-weight: var(--p_weight);
+    font-size: var(--p_size);
   }
 
 .center{
@@ -69,31 +111,31 @@ main {
     height: fit-content;
 }
 .a_content {
-    width: 17vw;
-    height: 3.3vw;
-    background-color: #9747ff;
-    color: white;
+    width: var(--width_buttom);
+    height: var(--height_buttom);
+    background-color: var(--background_color_buttom);
     text-decoration: none;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 36vw;
-    font-size: 1.2vw;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-size: var(--text_buttom_size);
+    font-weight: var(--text_weight_buttom);
+}
+.a_content:hover{
+  background-color: var(--background_color_buttom_hover);
 }
 .text_blue {
-  color: #9747ff;
-  text-shadow: 5px 5px 200px  #9747ff;
+  color: var(--h1_emphasis_color);
+  text-shadow: var(--h1_empshasis_shadow);
 }
 .h1_content {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 3.5vw;
+  font-weight: var(--h1_weight);
+  font-size: var(--h1_size);
   line-height: 4vw;
   margin: 0px;
   letter-spacing: 0.1rem;
+  width: var(--h1_widht);
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -114,19 +156,19 @@ main {
   }
 
   .h1_content {
-    font-size: 10vw;
+    font-size: var(--h1_size_tablet);
     line-height: 12vw;
-    width: 85%;
+    width: var(--h1_widht_tablet);
   }
   .a_content {
-    width: 50vw;
-    height: 10vw;
-    font-size: 3.5vw;
+    width: var(--width_buttom_tablet);
+    height: var(--height_buttom_tablet);
+    font-size: var(--text_buttom_size_tablet) ;
     margin: 4vw 0;
   }
   .p_content {
-    font-size: 3.3vw;
-    width: 90%;
+    font-size: var(--p_size_tablet);
+    width: var(--p_widht_tablet);
     line-height: 5.5vw;
   }
 }
@@ -143,19 +185,19 @@ main {
   }
 
   .h1_content {
-    font-size: 11vw;
+    font-size: var(--h1_size_celular);
     line-height: 12vw;
-    width: 85%;
+    width: var(--h1_widht_celular);
   }
   .a_content {
-    width: 65vw;
-    height: 15vw;
-    font-size: 5vw;
+    width: var(--width_buttom_celular);
+    height: var(--height_buttom_celular);
+    font-size: var(--text_buttom_size_celular);
     margin: 4vw 0;
   }
   .p_content {
-    font-size: 5vw;
-    width: 85%;
+    font-size: var(--p_size_celular);
+    width: var(--p_widht_celular);
     line-height: 6.9vw;
   }
 }
