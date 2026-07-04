@@ -5,9 +5,10 @@
   --background_color:#0e1014;
   --font_text:"Poppins", sans-serif;
   --text_color:#ffffff;
-  --h1_emphasis_color:#9747ff;
+  --h1_emphasis_color:#9747FF;
   --h1_empshasis_shadow: 5px 5px 200px  #9747ff;
-  --background_color_buttom:#9747ff;
+  --background_color_buttom:#9747FF;
+  --text_buttom_color: #ffffff;
   --background_color_buttom_hover:#823be0;
   
   /* Estilação Desktop */
@@ -121,6 +122,7 @@ main {
     border-radius: 36vw;
     font-size: var(--text_buttom_size);
     font-weight: var(--text_weight_buttom);
+    color: var(--text_buttom_color);
 }
 .a_content:hover{
   background-color: var(--background_color_buttom_hover);
@@ -169,7 +171,7 @@ main {
   .p_content {
     font-size: var(--p_size_tablet);
     width: var(--p_widht_tablet);
-    line-height: 5.5vw;
+    line-height:5.5vw;
   }
 }
 

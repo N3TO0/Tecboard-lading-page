@@ -1,59 +1,43 @@
-/* /* ==========================================================================
-   RESET CSS MODERNO
-   ========================================================================== */
-
-/* 1. Garante que o padding e a borda fiquem DENTRO do tamanho total do elemento */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-/* 2. Remove o comportamento de scroll elástico e garante altura total */
-html {
-  height: fit-content;
-  width: fit-content;
-
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-/* 3. Melhora a renderização das fontes e define uma base limpa para o body */
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* 4. Evita que imagens e mídias fiquem maiores que seus containers (essencial para responsividade) */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* 5. Herda as fontes do body para elementos de formulário que costumam ignorá-la */
-input, button, textarea, select {
-  font: inherit;
-}
-
-/* 6. Evita que textos longos quebrem o layout em títulos e parágrafos */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* 7. Remove os pontinhos/números padrões de listas */
+/* body {
+	line-height: 1;
+} */
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
-
-/* 8. Remove os sublinhados padrões e cores azuis de links */
-a {
-  text-decoration: none;
-  color: inherit;
+blockquote, q {
+	quotes: none;
 }
-
-/* 9. Remove bordas padrões de botões e adiciona o cursor de clique */
-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-} 
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
