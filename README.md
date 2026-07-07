@@ -2,9 +2,8 @@
 > lading page com informações e direcionamento sobre o aplicativo tecboard.
 
 ## ⚙️ Funcionalidades
-*   [ ] Funcionalidade 1 (ex: Cadastro de usuários)
-*   [ ] Funcionalidade 2 (ex: Integração com API de filmes)
-*   [ ] Funcionalidade 3 (ex: Persistência em banco de dados SQL)
+*   Alteração de tema claro e escuto 
+*   Direcionamento de usuario 
 
 ## 🛠️ Tecnologias Utilizadas
 *   **Linguagem:** HTML | CSS | JavaScript
@@ -14,7 +13,7 @@
 Uma breve explicação da organização dos arquivos:
 *   `/src`: Arquivos de Imagens e Icones
 *   `/js`: Arquivos JavaScript com funcionalidades.
-*   `/css`: Arquivos css para estelização.
+*   `/css`: Arquivos css para estilização.
 
 
 ## ✍️ Autor
