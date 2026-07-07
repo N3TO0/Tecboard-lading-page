@@ -102,6 +102,7 @@ header {
       border: 0px black solid;
       width: fit-content;
       height: fit-content;
+      cursor: pointer;
     }
     button:hover {
       border: 0px black solid;
