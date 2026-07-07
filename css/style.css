@@ -82,7 +82,7 @@ section {
     width: var(--p_widht);
     font-weight: var(--p_weight);
     font-size: var(--p_size);
-  }
+}
 
 .center{
   display: flex;
