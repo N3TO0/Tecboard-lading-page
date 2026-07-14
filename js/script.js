@@ -12,6 +12,7 @@ const page_wite = () => {
         h1_color.style.color = "#000000";
         p_color.style.color = "#000000";
         icon_page_color.src ="./src/icons/icon-dark.png";
+        icon_page_color.alt ="icone de lua";
         logo_teachboard.src ="./src/img/logo-black.png";
 
         page_black = false
@@ -19,6 +20,7 @@ const page_wite = () => {
         page_color.style.backgroundColor = "#000000";
         h1_color.style.color = "#ffffff";
         p_color.style.color = "#ffffff";
+        icon_page_color.alt ="icone de sol";
         icon_page_color.src ="./src/icons/icon-light.png";
         logo_teachboard.src ="./src/img/logo-white.png";
 
